@@ -3,7 +3,10 @@ body {
   font-family: Optima, sans-serif;
   background-color: #f3f1ec;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 /* **************** header ************  */
 header {
   background-color: #f3f1ec; /*rgba(172, 223, 220, 0.5);  #c4e2dd;*/
@@ -397,6 +400,10 @@ header .header__side-menu {
     max-width: 80%;
     padding: 2rem;
   }
+  .about-us__img > img {
+    /* height: 20vmax; */
+    max-width: 60vmax;
+  }
 }
 .about-us__text--content-2-1,
 .about-us__text--content-2-2 {
@@ -718,7 +725,44 @@ header .header__side-menu {
   background-color: #70387c;
   color: #cfd8dc;
 }
-
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  /* background-color: #3e0a4a; */
+  color: #eceff1;
+  /* border-radius: 50%;
+  border: 1px solid #cfd8dc;
+  padding: 0.5rem 1rem; */
+}
+.footer__text-1--social-media-icons {
+  margin-top: 2rem;
+}
+.facebook,
+.twitter,
+.instagram {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #70387c;
+  color: #eceff1;
+  border-radius: 50%;
+  padding: 0.7rem;
+  border: 1px solid #cfd8dc;
+  cursor: pointer;
+}
+.facebook {
+  padding: 0.7rem 0.9rem;
+}
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+  background-color: #cfd8dc;
+  color: #70387c;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram :hover {
+  color: #70387c;
+}
 @media screen and (max-width: 1196px) {
   .footer__text {
     flex-direction: column;
